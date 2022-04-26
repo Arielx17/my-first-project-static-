@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="style.css" rel="stylesheet" media="all">
+    </head>
+    <body bgcolor="#fff">
+            <div class="nav">
+                    <div class="menu"><a href="首页.html">首页</a></div>      
+                    <div class="menu"><a>品牌分类</a>
+                        <div class="menu-1">
+                            <a href="Dior.html">Dior</a>
+                        </div>
+                        <div class="menu-1">
+                            <a href="Tiffany.html">Tiffany</a>
+                        </div>
+                        <div class="menu-1">
+                            <a>Givenchy</a>
+                        </div>
+                    </div>
+                    <div class="menu"><a href="#">种类</a>
+                        <div class="menu-1"><a href="耳钉.html">耳钉</a></div>
+                        <div class="menu-1"><a>耳夹</a></div>
+                        <div class="menu-1"><a href="耳环.html">耳环</a></div>
+                    </div>
+                    <div class="menu"><a href="#">设计师</a>
+                        <div class="menu-1"><a href="MGC.html">Maria Grazia Chiuri</a></div>
+                    </div>
+                    <div class="menu"><a href="#"><img src="user1.png" class="img1"></a>
+                        <div class="menu-1"><a href="购物车.html">购物车</a></div>
+                        <div class="menu-1"><a href="个人信息.html">个人中心</a></div>
+                    </div>
+                </div>
+                <div class="box7">
+                        <div class="box71">
+                            <a href="#">#J'ADIOR耳饰</a><br>
+                            <b>条形耳环</b><br><br>
+                            <h1>¥2,850</h1><img src="购物.png">
+                            <h2>-1+</h2>
+                        </div>
+                        <h3>商品详情</h3>
+                        <h4>描述及细节
+                            字母鲜明的几何线条，精致呈现 J’ADIOR 系列的复古。</h4>
+                        <h3>材质</h3>
+                        <h4>镀金复古金属和白色水晶</h4>
+                    </div>
+        <div class="box6">
+            <input type="button" class="left" onclick="leftonclick()"> 
+            <a href=""><img id="dior1"></a> 
+           <input type="button" class="right" onclick="change()">
+        </div>
+        
+        <script type="text/javascript">
+            var i=4;
+               window.onload=function()
+               {
+                    window.setInterval("change()",3000)
+               }
+               function change()
+               {
+                 var img=document.getElementById("dior1");
+                 i++;
+                 if(i>5)
+                 {
+                     i=4;
+                 }
+                 img.src="dior"+i+".jpg";
+               }
+               function leftonclick()
+               {
+                   i--;
+                   if(i<4)
+                   {
+                       i=5;
+                   }
+                   img.src="dior"+i+".jpg";
+               }
+            </script>
+    </body>
+    <div class="bottom">
+        <div class="bottom1">
+            <a href="免责声明.html">免责声明</a>
+        </div>
+        <div class="bottom1">
+            <a href="关于我们.html">关于我们</a>
+        </div>
+        <div class="bottom1">
+            <a href="Q&A.html">Q&A</a>
+        </div>
+        <div class="bottom1">
+            <a href="作品保养.html">作品保养</a>
+        </div>
+        <div class="bottom1">
+            <a href="联系我们.html">联系我们</a>
+        </div>
+        <div class="bottom1">
+            <a href="意见反馈.html">意见反馈</a>
+        </div>
+    </div>   
+</html>
